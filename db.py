@@ -10,26 +10,6 @@ metadata = sqlalchemy.MetaData()
 class BaseMeta(ormar.ModelMeta):
     database = database
     metadata = metadata
-"""
-class PlaceOpeningHoursPeriodDetail(ormar.Model):
-    class Meta
-
-class PlaceOpeningHoursPeriod(ormar.Model):
-    class Meta(BaseMeta):
-        tablename = "place_opening_hours_period"
-    
-    open: 
-    close: 
-
-class PlaceOpeningHours(ormar.Model):
-    class Meta(BaseMeta):
-        tablename = "place_opening_hours"
-
-    id: int = ormar.Integer(primary_key=True)
-    periods: Optional[List[Period]] = ormar.ManyToMany(Period)
-    special_days:
-    weekday_text:
-"""
 
 class Place(ormar.Model):
     class Meta(BaseMeta):

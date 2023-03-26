@@ -3,7 +3,9 @@ import databases
 import ormar
 import sqlalchemy
 
-database = databases.Database("postgresql://mcano:pjNxOLD176uhFPHwcziCtvUmrXoL2QVL@dpg-cgbkm9hmbg55nqmr6klg-a.oregon-postgres.render.com/paycheck")
+#database = databases.Database("postgresql://mcano:pjNxOLD176uhFPHwcziCtvUmrXoL2QVL@dpg-cgbkm9hmbg55nqmr6klg-a.oregon-postgres.render.com/paycheck")
+database = databases.Database("postgres://mcano:pjNxOLD176uhFPHwcziCtvUmrXoL2QVL@dpg-cgbkm9hmbg55nqmr6klg-a/paycheck")
+
 metadata = sqlalchemy.MetaData()
 
 
